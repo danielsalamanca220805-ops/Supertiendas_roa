@@ -1,0 +1,341 @@
+:root {
+  --bg: #ffff;
+  --blue-primary: #038F21:root 
+  --bg: #ffff;
+  --blue-primary: #2b7fc1;
+  --blue-medium: #4aa3d4;
+  --blue-light: #daeef8;
+  --blue-border: #038F21;
+  --white: #ffffff;
+  --text-blue: #038F21;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background: url("../img/fondoroa.png");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  width: 380px;
+  padding: 40px 30px 50px;
+  background: #fff;
+  border-radius: 5%;
+  
+}
+
+.avatar {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  border: 3px solid var(--blue-primary);
+  background-color: var(--bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.avatar i {
+  font-size: 62px;
+  color: var(--blue-primary);
+}
+
+.input-group {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: var(--blue-light);
+  border: 2px solid var(--blue-border);
+  border-radius: 40px;
+  padding: 12px 20px;
+  gap: 12px;
+}
+
+.input-group input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 18px;
+  color: var(--text-blue);
+}
+
+.input-group input::placeholder {
+  color: var(--blue-medium);
+  opacity: 1;
+}
+
+.input-icon i {
+  font-size: 20px;
+  color: var(--blue-primary);
+}
+
+.toggle-password {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.toggle-password i {
+  font-size: 22px;
+  color: var(--blue-primary);
+}
+
+.options-row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4px;
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  color: var(--text-blue);
+  font-size: 15px;
+  font-weight: 500;
+  user-select: none;
+}
+
+.remember-me input[type="checkbox"] {
+  display: none;
+}
+
+.custom-checkbox {
+  width: 22px;
+  height: 22px;
+  background-color: var(--blue-primary);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-checkbox i {
+  font-size: 13px;
+  color: var(--white);
+}
+
+.remember-me input[type="checkbox"]:not(:checked) + .custom-checkbox {
+  background-color: transparent;
+  border: 2px solid var(--blue-primary);
+}
+
+.remember-me input[type="checkbox"]:not(:checked) + .custom-checkbox i {
+  display: none;
+}
+
+.forgot-password {
+  color: var(--text-blue);
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 16px;
+  background-color: var(--blue-primary);
+  color: var(--white);
+  border: none;
+  border-radius: 40px;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.login-btn:hover {
+  background-color: #038F21;
+}
+
+.login-btn:active {
+  transform: scale(0.98);
+};
+ 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  width: 380px;
+  padding: 40px 30px 50px;
+}
+
+.avatar {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  border: 3px solid var(--blue-primary);
+  background-color: var(--bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.avatar i {
+  font-size: 62px;
+  color: var(--blue-primary);
+}
+
+.input-group {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: var(--blue-light);
+  border: 2px solid var(--blue-border);
+  border-radius: 40px;
+  padding: 12px 20px;
+  gap: 12px;
+}
+
+.input-group input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 18px;
+  color: var(--text-blue);
+}
+
+.input-group input::placeholder {
+  color: var(--blue-medium);
+  opacity: 1;
+}
+
+.input-icon i {
+  font-size: 20px;
+  color: var(--blue-primary);
+}
+
+.toggle-password {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.toggle-password i {
+  font-size: 22px;
+  color: var(--blue-primary);
+}
+
+.options-row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4px;
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  color: var(--text-blue);
+  font-size: 15px;
+  font-weight: 500;
+  user-select: none;
+}
+
+.remember-me input[type="checkbox"] {
+  display: none;
+}
+
+.custom-checkbox {
+  width: 22px;
+  height: 22px;
+  background-color: var(--blue-primary);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-checkbox i {
+  font-size: 13px;
+  color: var(--white);
+}
+
+.remember-me input[type="checkbox"]:not(:checked) + .custom-checkbox {
+  background-color: transparent;
+  border: 2px solid var(--blue-primary);
+}
+
+.remember-me input[type="checkbox"]:not(:checked) + .custom-checkbox i {
+  display: none;
+}
+
+.forgot-password {
+  color: var(--text-blue);
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 16px;
+  background-color: var(--blue-primary);
+  color: var(--white);
+  border: none;
+  border-radius: 40px;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.login-btn:hover {
+  background-color: #038F21;
+}
+
+.login-btn:active {
+  transform: scale(0.98);
+}
